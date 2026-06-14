@@ -1,14 +1,8 @@
 # Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "default"
 title                    : "Junteng Liu"
 title_separator          : "-"
 name                     : &amp;name "Junteng Liu"
@@ -19,7 +13,6 @@ repository               : "ythencu/LJT-Homepage"
 
 # Site Author
 author:
-  # Biographic information
   avatar           : "profile.png"
   name             : "Junteng Liu"
   pronouns         :
@@ -42,7 +35,6 @@ author:
   researchgate     :
   scopus           :
   zotero           :
-
 
   # Repositories and software development
   bitbucket        :
@@ -79,7 +71,7 @@ author:
   youtube          :
   zhihu            :
 
-# Publication Category - The following the list of publication categories and their headings
+# Publication Category
 publication_category:
   books:
     title: 'Books'
@@ -214,16 +206,15 @@ kramdown:
   enable_coderay: false
 
 
-# These settings control the types of collections used by the template
+# Collections
 collections:
   publications:
     output: true
     permalink: /:collection/:path/
 
 
-# These settings control how pages and collections are included in the site
+# Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -234,14 +225,12 @@ defaults:
       comments: true
       share: true
       related: true
-  # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-  # _publications
   - scope:
       path: ""
       type: publications
@@ -255,17 +244,15 @@ defaults:
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed
 
 
 # Outputting
 permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
 timezone: Asia/Hong_Kong
 
 
-# Plugins (previously gems:)
+# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -273,7 +260,6 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
@@ -283,11 +269,6 @@ whitelist:
 
 
 # Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~&gt; https://github.com/jekyll/jekyll-archives
-#  - Jekyll Archives plugin archive pages ~&gt; https://github.com/jekyll/jekyll-archives
-#  Values
-#  - The archives layouts can be found in _pages/*-archive.md/html
 category_archive:
   type: liquid
   path: /categories/
@@ -297,7 +278,6 @@ tag_archive:
 
 
 # HTML Compression
-# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
